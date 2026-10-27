@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Deals by Anas — Dealership Management System
+
+A full-stack dealership management application designed to manage the daily operations of a second-hand two-wheeler business.
+
+## Overview
+
+Deals by Anas is a web application built to organize vehicle inventory, purchases, sales, customer records, expenses, documentation, and dealership reporting in one place.
+
+The project demonstrates the development of a database-backed business management system using modern web technologies.
+
+## Features
+
+* **Dashboard:** View dealership information and operational summaries.
+* **Inventory Management:** Maintain vehicle records, specifications, purchase prices, and status.
+* **Customer Management:** Organize buyer and seller information.
+* **Purchase Management:** Record vehicle purchases and seller details.
+* **Sales Management:** Track vehicle sales, amounts received, outstanding balances, and estimated profit.
+* **Expense Management:** Record and categorize dealership expenses.
+* **Spare Parts:** Manage stock quantities and low-stock alerts.
+* **Invoices and Receipts:** Create and print vehicle sales invoices.
+* **Documents:** Track vehicle-related documents and their statuses.
+* **RC & NOC Tracking:** Monitor registration certificate and no-objection certificate progress.
+* **Leads and Follow-ups:** Manage potential customers and follow-up activities.
+* **Reports:** Review dealership activity and export report data.
+* **Authentication:** Protect application pages behind a login.
+* **Business Settings:** Configure dealership information and invoice preferences.
+
+## Technology Stack
+
+* **Frontend:** Next.js, React, TypeScript
+* **Styling:** Tailwind CSS
+* **Backend and Database:** Supabase, PostgreSQL
+* **Authentication:** Supabase Auth
+* **Version Control:** Git and GitHub
+* **Deployment:** Vercel (planned or deployed, depending on current status)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+* Node.js
+* npm
+* A Supabase project
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/himanshujitjai-ds/deals-by-anas.git
+cd deals-by-anas
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+### Environment Variables
+
+Create a `.env.local` file in the project root and add your own Supabase project credentials:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+```
+
+Replace the placeholder values with credentials from your own Supabase project.
+
+### Run Locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Security Notes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Never commit `.env.local` or other files containing secrets.
+* Use appropriate Supabase Row Level Security (RLS) policies.
+* Do not use real customer information or production credentials in public demonstrations.
+* Review access controls before deploying the application for business use.
 
-## Learn More
+## Project Status
 
-To learn more about Next.js, take a look at the following resources:
+The core dealership management modules have been implemented and tested by the developer. Deployment and production readiness should be verified against the target environment.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Himanshu Thakur**
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Developed as a practical full-stack project focused on solving operational problems in a second-hand vehicle dealership.
